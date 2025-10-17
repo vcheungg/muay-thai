@@ -13,7 +13,7 @@ function generateCombo(event) {
   let apiKey = "047t2173e3a39c66942c701baf3a6of5";
   let prompt = `Generate a 6-12 hit combo starting with ${userInput.value}`;
   let context =
-    "Include strikes like jab, cross, elbows, knees, teeps, and kicks. Alternate sides for flow (left/right). Make it realistic and dynamic.";
+    "Include strikes like jab, cross, elbows, knees, teeps, and kicks. Alternate sides for flow (left/right). Make it realistic and dynamic. Keep it simple to just the hits, no need to expand it or include anything else";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let muaythaiCombo = document.querySelector("#combo");
   muaythaiCombo.innerHTML = "Generating a combo..";
