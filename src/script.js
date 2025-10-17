@@ -1,3 +1,12 @@
+function displayCombo(response) {
+  new Typewriter("#combo", {
+    strings: response.data.answer,
+    autoStart: true,
+    delay: 20,
+    cursor: "",
+  });
+}
+
 function generateCombo(event) {
   event.preventDefault();
   let userInput = document.querySelector("#combo-idea");
