@@ -15,11 +15,10 @@ function generateCombo(event) {
   let context =
     "Follow user prompt - start a muay thai combo with user input value, can include jab, cross, knees, teeps, elbows, kicks of any kind, right or left side and make it flow";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+  let muaythaiCombo = document.querySelector("#combo");
+  muaythaiCombo.innerHTML = "Generating a combo..";
+  axios.get(apiUrl).then(displayCombo);
 }
-
-let muaythaiCombo = document.querySelector("#combo");
-muaythaiCombo.innerHTML = "Generating a combo..";
-axios.get(apiUrl).then(displayCombo);
 
 let comboForm = document.querySelector("#combo-generator");
 comboForm.addEventListener("submit", generateCombo);
