@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Muay Thai Combo Generator</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Muay Thai Combo Generator</h1>
+      </header>
+      <main>
+        <form id="combo-generator">
+          <input
+            type="text"
+            placeholder="Start your combo with a.."
+            autofocus
+            required
+            class="idea"
+            autocomplete
+            id="user-idea"
+          />
+          <input type="submit" class="generate-button" />
+        </form>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/vcheungg" target="_blank"> Vivian Cheung</a>
+        and is
+        <a href="#" target="_blank"> open-sourced on Github</a>
+        and hosted on
+        <a href="#" target="_blank"> Netlify.</a>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
