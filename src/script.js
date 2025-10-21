@@ -32,7 +32,7 @@ function generateCombo(event) {
 
   let isValid = validStrikes.some((strike) => input.includes(strike));
 
-  if (isValid) {
+  if (!isValid) {
     comboOutput.innerHTML = "Please enter a valid strike";
     return;
   }
