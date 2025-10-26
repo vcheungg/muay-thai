@@ -41,7 +41,7 @@ function generateCombo(event) {
   let apiKey = "047t2173e3a39c66942c701baf3a6of5";
   let prompt = `Generate a 6-12 hit combo starting with ${userInput.value}, make sure it is a valid hit and do not generate a combo if something is off-topic`;
   let context =
-    "Include strikes like jab, cross, elbows, knees, teeps, and kicks, no need to include it all, just a suggestion. Alternate sides for flow (left/right). Make it realistic and dynamic. Keep it simple to just the hits, no need to expand it or include anything else";
+    "Include strikes like jab, cross, elbows, knees, teeps, and kicks, no need to include it all, just a suggestion. Alternate sides for flow (left/right). Make it realistic and dynamic. Keep it simple to just the hits, no need to expand it or include anything else and list it vertically";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayCombo);
